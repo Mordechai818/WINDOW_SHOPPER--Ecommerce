@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+a { 
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(223, 215, 230);
+
+}
+
+#h1-headerAndLogo {
+    background-color: rgb(162, 177, 206);
+    display: flex;
+    justify-content: center;    
+    
+
+}
+
+h1{
+    background-color: rgb(2, 7, 57);
+    width: 80vw;
+    height: 25vh;
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+}
+
+#logo{
+    display: inline;
+    width: 15vw;
+
+
+}
+
+header p {
+    background-color: rgb(186, 182, 127);
+    font-size: 1.6rem;
+    text-align: center;
+    height: 9vh;
+}
+
+#inputDiv{
+    background-color: white;
+    height: 8vh;
+    display: flex ;  
+    justify-content: center;  
+}
+
+div input {
+     width: 40vw;
+     text-align: center;
+     border-width: 0.4vw;
+     margin: 2px;
+}
+
+nav div {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.5vw;
+}
+
+nav div a:hover {
+    color: darkred;
+    font-size: 3vw;
+}
+
+.main {
+    height: 30vh;
+    background-color: rgb(3, 5, 25);
+    border-color: rgb(0, 0, 0);
+    border-width: 5px;
+    margin: 4vw;
+    display: flex;
+    justify-content: center;
+    display: block;
+    margin-bottom: 10px;
+    flex-wrap: nowrap;
+    
+}
+
+img {
+    height: 40vh;
+}
+
+@media screen and (max-width: 656px) {
+    header h1 {
+        font-size: 3rem;
+        color: green;
+    }
+}
+
+@media screen and (max-width: 492) {
+    header h1 {
+        font-size: 1rem;
+
+        color: rgb(221, 16, 16);
+    }
+}
+
+@media screen and (max-width: 656px) {
+.imageAndPara {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+}
+}
+
+@media screen and (max-width: 492) {
+    .imageAndPara {
+        width: 48vw;
+        display: flex;
+        flex-direction: column;
+        /* text-align: center; */
+    }
+}
+
+
+
+
+
+/* footer {
+    height: 10vh;
+    text-align: center;
+    font-size: 1.5vw; 
+    display: block;
+    margin: 2.5vw;
+    background-color: rgb(17, 15, 15);
+    margin-bottom: 0vh;
+} */
+
+

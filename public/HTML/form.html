@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="../CSS/form.css">
+    
+</head>
+<body>
+    <header>
+        <div id="h1-headerAndLogo"><h2>
+            <!-- <img id="logo" src="./images/logo/1_logo.png" alt="logo"> -->
+            Window Shopper</h2> </div>
+        <div id="inputDiv">
+                    <input type="text" placeholder="Search your media here">
+                    <a href="../HTML/cart.html"><div><img src="../images/logo/shoppingCart.png" alt="" style="float: right; height: 8vh;"></div></a>
+
+        </div>
+        <nav>
+            <div>
+                 <a href="../index.html">HOME</a>  <a href="./movies.html">MOVIES</a> <a href="./tv_shows.html">TV SHOWS</a> <a href="./music.html">MUSIC</a> <a href="./video_games.html">VIDEO GAMES</a>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <h3 id="addObject">Add Object</h2>
+
+    <form id="mediaForm" action="">
+        <label for="mediaName">name</label><br>
+        <input id="mediaName" type="text" name="name"><br><br>
+
+        <label for="objectprice">price</label><br>
+        <input id="objectprice" type="number" name="price"><br><br>
+
+        <label for="objectDescription">description</label><br>
+        <input id="objectDescription" type="text" value="Lorem ipsum dolor." name="description"><br><br>
+
+        <label for="imagesLink">Images links</label><br>
+        <input id="imagesLink" type="text" name="Images"><br><br>
+
+        <label for="mediaType">media type</label><br>
+        <input id="mediaType" type='text' name="categories"><br>
+
+        <input type="submit" value="submit" onclick="sentData()">
+
+    </form>
+
+    <div>
+        <table id="tableCart">
+            <tr>
+                <th>Category</th>
+                <th>Name</th>
+                <th>image</th>
+                <th>Remove</th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="../JS/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* body {
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 1.5rem;
+    background-color: black;
+} */
+
+a { 
+    text-decoration: none;
+}
+
+body {
+    background-color: white;
+
+}
+
+#h1-headerAndLogo {
+    background-color: rgb(162, 177, 206);
+    display: flex;
+    justify-content: center;    
+    
+
+}
+
+h2{
+    background-color: rgb(2, 7, 57);
+    width: 80vw;
+    height: 25vh;
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+}
+
+#logo{
+    display: inline;
+    width: 15vw;
+
+
+}
+
+header p {
+    background-color: rgb(186, 182, 127);
+    font-size: 1.6rem;
+    text-align: center;
+    height: 9vh;
+}
+
+#inputDiv{
+    background-color: white;
+    height: 8vh;
+    display: flex ;  
+    justify-content: center;  
+}
+
+div input {
+     width: 40vw;
+     text-align: center;
+     border-width: 0.4vw;
+     margin: 2px;
+}
+
+nav div {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.5vw;
+    background-color: white;
+
+}
+
+nav div a:hover {
+    color: darkred;
+    font-size: 3vw;
+}
+
+body {
+    background-color: rgb(248, 235, 182);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+table {
+    border: solid;
+    border-width: 5px;
+    border-color: rgb(5, 5, 69);
+    border-radius: 10px;
+    width: 60vw;
+    text-align: center;
+    margin: 5vh;
+
+
+    
+};
+
+th {
+    color: rgb(1, 1, 41);
+}
+
+#btnRemove {
+    
+}
+
+h1 {
+    text-align: center;
+}

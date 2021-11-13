@@ -1,0 +1,185 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 1.5rem;
+    background-color: black;
+}
+
+a { 
+    text-decoration: none;
+}
+
+body {
+    background-color: white;
+
+}
+
+#h1-headerAndLogo {
+    background-color: rgb(162, 177, 206);
+    display: flex;
+    justify-content: center;    
+    
+
+}
+
+h1{
+    background-color: rgb(2, 7, 57);
+    width: 80vw;
+    height: 25vh;
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+}
+
+#logo{
+    display: inline;
+    width: 15vw;
+
+
+}
+
+header p {
+    background-color: rgb(186, 182, 127);
+    font-size: 1.6rem;
+    text-align: center;
+    height: 9vh;
+}
+
+#inputDiv{
+    background-color: white;
+    height: 8vh;
+    display: flex ;  
+    justify-content: center;  
+}
+
+div input {
+     width: 40vw;
+     text-align: center;
+     border-width: 0.4vw;
+     margin: 2px;
+}
+
+nav div {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.5vw;
+    background-color: white;
+    
+
+}
+
+nav div a:hover {
+    color: darkred;
+    font-size: 3vw;
+}
+
+
+main {
+    margin: auto;
+    width: 88vw;
+    background-color: rgb(255, 252, 241);
+}
+
+#section_Container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imageAndPara {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+}
+
+.image_movie {
+    width: 100%;
+    border-style: solid;
+    border-width: 0.25% ;
+    border-color: rgb(64, 2, 2);
+}
+
+.btn {
+    font-size: 1vw;
+    background-color: rgb(43, 187, 43);
+    color: white;
+    height: 2.5vw;
+    align-items: center;
+
+    
+}
+
+.movie_price {
+    font-size: 3vw;
+    color: rgba(255, 0, 0, 0.774);
+    display: inline;
+    height: 4vh;
+
+    }
+
+span {
+    font-size: 1.5vw;
+    color: rgb(3, 114, 3);
+
+}
+
+.nameMovie{
+    font-size: 1.5vw;
+    display: inline;
+    text-align: center;
+    background-color: rgb(187, 187, 187);
+}
+
+.containerBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1vw;
+    width: 18.5vw;
+    padding: 0.3vw;
+    background:  rgb(228, 228, 228);
+
+}
+@media screen and (max-width: 656px) {
+    header h1 {
+        font-size: 3rem;
+        color: green;
+    }
+}
+
+@media screen and (max-width: 492) {
+    header h1 {
+        font-size: 1rem;
+
+        color: rgb(221, 16, 16);
+    }
+}
+
+@media screen and (max-width: 656px) {
+.imageAndPara {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+}
+}
+
+@media screen and (max-width: 492) {
+    .imageAndPara {
+        width: 48vw;
+        display: flex;
+        flex-direction: column;
+        /* text-align: center; */
+    }
+}
+
+
+
