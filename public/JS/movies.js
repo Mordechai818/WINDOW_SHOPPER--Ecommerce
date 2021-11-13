@@ -25,7 +25,7 @@ function displayMovies() {
     `<div class="imageAndPara">
     <img class="image_movie" src="${allMovies[index].Images[0]}" alt="Movie poster">
     <p class="nameMovie">${allMovies[index].name}</P>
-    <div class="containerBtn"><button class="btn" onClick="save(${index})">Add to cart</button> 
+    <div class="containerBtn"><button class="btn" onClick="addToCart('${allMovies[index]._id}')">Add to cart</button> 
     <p class="movie_price"><span>$</span>${allMovies[index].price}</p><///>
     </div>`;
   }
@@ -33,8 +33,32 @@ function displayMovies() {
 
 var btn = document.getElementsByClassName("btn");
 var cart = [];
+function patchAddToCart(product){
+  console.log(product);
+  axios 
+  .patch("/addToCart",product)
+  .then((response)=>{
+    console.log(response);
+  })
+  .catch((error)=>{console.error(error);})
+}
 
+function addToCart(ID){
+  axios
+  .get(`/addToCart/${ID}`)
+  .then((response)=>{
+    if(response.status==200){
+      console.log(response);
+      patchAddToCart(response.data)
+    }
+  })
+  .catch((err)=>{
+    alert(err);
+  })
+  .then()
+  }
 
+ 
 // for (let index = 0; index < btn.length; index++) {
 //   btn[index].addEventListener("click", function () {
 //     cart.push(allMovies[index]);

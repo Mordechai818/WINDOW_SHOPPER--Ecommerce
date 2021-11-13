@@ -5,6 +5,7 @@ const routesImport = require("../routing/routes");
 // const mongoose = require('mongo')
 
 const PORT = 5000;
+app.use(express.json())
 
 // MongoClient.connect(url , (err,db)=>{
 // if(err) throw err;
